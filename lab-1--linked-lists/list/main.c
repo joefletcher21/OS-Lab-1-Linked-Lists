@@ -9,39 +9,39 @@ int main() {
   list_print(myList);
   printf("\n");
   
-  list_add_to_back(myList, 4);
-  list_print(myList);//  4
-  printf("\n");
-  
-  list_add_to_back(myList, 5);
-  list_print(myList);//  4 -> 5
-  printf("\n");
-  
-  list_add_to_back(myList, 6); 
-  list_print(myList);//  4 -> 5 -> 6
+  list_add_to_back(myList, 6);
+  list_print(myList);//  6
   printf("\n");
   
   list_add_to_back(myList, 7);
-  list_print(myList);
+  list_print(myList);//  6 -> 7
   printf("\n");
   
-  list_add_to_front(myList, 10);
-  list_print(myList);
+  list_add_to_back(myList, 8); 
+  list_print(myList);//  6 -> 7 -> 8
   printf("\n");
   
-  list_add_to_front(myList, 14);
-  list_print(myList);
+  list_add_to_back(myList, 15);
+  list_print(myList); // 6 -> 7 -> 8 -> 15
+  printf("\n");
+  
+  list_add_to_front(myList, 5);
+  list_print(myList);// 5 ->  6 -> 7 -> 8 -> 15
+  printf("\n");
+  
+  list_add_to_front(myList, 1);
+  list_print(myList);// 1 -> 5 ->  6 -> 7 -> 8 -> 15
   printf("\n");
   
   list_remove_from_back(myList);
-  list_print(myList);
+  list_print(myList);// 1 -> 5 ->  6 -> 7 -> 8
   printf("\n");
   
   list_remove_from_front(myList);
-  list_print(myList);
+  list_print(myList); //5 ->  6 -> 7 -> 8
   printf("\n");
   
-  list_add_at_index(myList, 15, 3);
+  list_add_at_index(myList, 9, 3);
   list_print(myList);
   printf("\n");
   
@@ -49,7 +49,7 @@ int main() {
   list_print(myList);
   printf("\n");
   
-  list_is_in(myList, 7);
+  list_is_in(myList, 3);
   list_is_in(myList, 6);
   list_get_elem_at(myList, 3);
   printf("\n");
